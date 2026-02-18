@@ -2,29 +2,29 @@
 
 A modern, full-stack web application for managing employee records and tracking daily attendance. Built with React, FastAPI, and PostgreSQL.
 
-## 🌟 Features
+## Features
 
 ### Employee Management
-- ✅ Add new employees with validation
-- ✅ View all employees in a card-based layout
-- ✅ Search employees by name, ID, email, or department
-- ✅ Delete employee records
-- ✅ Duplicate employee ID and email prevention
+-  Add new employees with validation
+- View all employees in a card-based layout
+- Search employees by name, ID, email, or department
+- Delete employee records
+- Duplicate employee ID and email prevention
 
 ### Attendance Management
-- ✅ Mark daily attendance (Present/Absent)
-- ✅ View attendance records in table format
-- ✅ Filter attendance by employee name or date
-- ✅ Prevent duplicate attendance for the same date
-- ✅ Automatic date validation
+- Mark daily attendance (Present/Absent)
+- View attendance records in table format
+- Filter attendance by employee name or date
+- Prevent duplicate attendance for the same date
+- Automatic date validation
 
 ### Dashboard
-- ✅ Real-time statistics overview
-- ✅ Total employees count
-- ✅ Today's attendance summary
-- ✅ Present/Absent counts
+- Real-time statistics overview
+- Total employees count
+- Today's attendance summary
+- Present/Absent counts
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Frontend
 - **React 18** - Modern UI library
@@ -40,19 +40,19 @@ A modern, full-stack web application for managing employee records and tracking 
 - **Pydantic** - Data validation
 - **Uvicorn** - ASGI server
 
-## 📋 Prerequisites
+## Prerequisites
 
 - **Node.js** 18+ and npm
 - **Python** 3.9+
 - **PostgreSQL** 12+
 
-## 🚀 Local Setup
+## Local Setup
 
 ### 1. Clone the Repository
 
 ```bash
 git clone <repository-url>
-cd HRMS
+cd hrms-lite
 ```
 
 ### 2. Backend Setup
@@ -109,7 +109,7 @@ npm run dev
 
 The frontend will be available at `http://localhost:5173`
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 HRMS/
@@ -170,7 +170,7 @@ Follows **MVC pattern** with service and repository layers:
 
 📖 See [ARCHITECTURE.md](file:///C:/Users/katiy/OneDrive/Desktop/Project/HRMS/ARCHITECTURE.md) for detailed architecture documentation.
 
-## 🔌 API Endpoints
+## API Endpoints
 
 ### Employees
 - `POST /api/employees` - Create new employee
@@ -182,16 +182,16 @@ Follows **MVC pattern** with service and repository layers:
 - `GET /api/attendance/{employee_id}` - Get employee attendance
 - `GET /api/attendance?date=YYYY-MM-DD` - Get attendance by date
 
-## 🎨 UI Features
+## UI Features
 
-- 🌙 Dark theme with gradient accents
-- ✨ Smooth animations and transitions
-- 📱 Fully responsive mobile design
-- 🎯 Intuitive navigation
-- 💫 Loading states and error handling
-- 🔍 Search and filter functionality
+- Dark theme with gradient accents
+- Smooth animations and transitions
+- Fully responsive mobile design
+- Intuitive navigation
+- Loading states and error handling
+- Search and filter functionality
 
-## 🚢 Deployment
+## Deployment
 
 ### Backend Deployment (Render/Railway)
 
@@ -210,24 +210,24 @@ Follows **MVC pattern** with service and repository layers:
 3. Build command: `npm run build`
 4. Output directory: `dist`
 
-## 🔒 Validation & Error Handling
+## Validation & Error Handling
 
 ### Backend Validations
-- ✅ Email format validation
-- ✅ Duplicate employee ID check
-- ✅ Duplicate email check
-- ✅ Employee existence check for attendance
-- ✅ Duplicate attendance prevention
-- ✅ Date range validation
+- Email format validation
+- Duplicate employee ID check
+- Duplicate email check
+- Employee existence check for attendance
+- Duplicate attendance prevention
+- Date range validation
 
 ### Frontend Validations
-- ✅ Required field validation
-- ✅ Email format validation
-- ✅ Date picker with max date (today)
-- ✅ Form state management
-- ✅ Error message display
+- Required field validation
+- Email format validation
+- Date picker with max date (today)
+- Form state management
+- Error message display
 
-## 📝 Assumptions & Limitations
+## Assumptions & Limitations
 
 ### Assumptions
 - Single admin user (no authentication required)
@@ -243,14 +243,14 @@ Follows **MVC pattern** with service and repository layers:
 - No file uploads or document management
 - No email notifications
 
-## 🧪 Testing the Application
+## Testing the Application
 
 ### Test Employee Creation
 1. Navigate to Employees page
 2. Fill in the form with:
-   - Employee ID: EMP001
-   - Name: John Doe
-   - Email: john@example.com
+   - Employee ID: EMP0123
+   - Name: Sandeep Kumar
+   - Email: Sandeep@example.com
    - Department: Engineering
 3. Click "Add Employee"
 4. Verify employee appears in the list
@@ -268,7 +268,7 @@ Follows **MVC pattern** with service and repository layers:
 2. Try marking attendance twice for same date → Should show error
 3. Try invalid email format → Should show validation error
 
-## 👨‍💻 Development
+## Development
 
 ### Commands Summary
 
@@ -285,13 +285,9 @@ npm run build    # Production build
 npm run preview  # Preview production build
 ```
 
-## 📄 License
+## License
 
-This project is created as a coding assignment and is free to use.
-
-## 🤝 Support
-
-For issues or questions, please create an issue in the repository.
+This project is created as a coding assignment.
 
 ---
 
