@@ -1,0 +1,93 @@
+.employee-list-container {
+    margin-top: 2rem;
+}
+
+.search-input {
+    max-width: 400px;
+}
+
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.employee-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    transition: all var(--transition-normal);
+}
+
+.employee-card:hover {
+    transform: translateY(-4px);
+}
+
+.employee-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.employee-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--primary-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    flex-shrink: 0;
+}
+
+.employee-info h4 {
+    margin-bottom: 0.25rem;
+    color: var(--text-primary);
+}
+
+.employee-id {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-family: 'Courier New', monospace;
+}
+
+.employee-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.detail-label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.detail-value {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.delete-btn {
+    width: 100%;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .employee-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .search-input {
+        max-width: 100%;
+    }
+}
