@@ -290,5 +290,3 @@ npm run preview  # Preview production build
 This project is created as a coding assignment.
 
 ---
-
-**Built with ❤️ using React + FastAPI + PostgreSQL**
