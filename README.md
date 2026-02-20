@@ -285,8 +285,4 @@ npm run build    # Production build
 npm run preview  # Preview production build
 ```
 
-## License
-
-This project is created as a coding assignment.
-
 ---
